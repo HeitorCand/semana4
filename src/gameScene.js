@@ -150,7 +150,7 @@ class GameScene extends Phaser.Scene {
       // Adiciona texto na tela
       this.add.text(gameState.larguraJogo / 3, 50, 'PONTUAÇÃO', { fontSize: '100px', fill: '#FFFFFF' });
       this.add.text(gameState.larguraJogo / 3, 200, 'Moedas:' + gameState.pontuacao, { fontSize: '45px', fill: '#FFFFFF' });
-      // Pausa a física
+      // Pausa a física do jogo
       this.physics.world.pause();
       // Pausa todas as animações
       this.anims.pauseAll();
