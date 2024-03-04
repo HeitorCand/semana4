@@ -29,7 +29,7 @@ class StartScene extends Phaser.Scene {
     // Adiciona um evento de clique ao botão
     btnPlay.on('pointerdown', function () {
       // Adicione aqui a lógica para mudar de cena
-     this.changeScene();
+     this.changeScene(); // função mudar cena
     }, this);
   }
 
