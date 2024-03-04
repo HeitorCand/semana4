@@ -29,8 +29,12 @@ class StartScene extends Phaser.Scene {
     // Adiciona um evento de clique ao botão
     btnPlay.on('pointerdown', function () {
       // Adicione aqui a lógica para mudar de cena
-      this.scene.start('GameScene'); // Substitua 'NomeDaCenaDestino' pelo nome da cena que você deseja iniciar
-      this.scene.stop('StartScene'); // Encerra esta cena ao iniciar a próxima
+     this.changeScene();
     }, this);
+  }
+
+  changeScene(){
+     this.scene.start('GameScene'); // Substitua 'NomeDaCenaDestino' pelo nome da cena que você deseja iniciar
+     this.scene.stop('StartScene'); // Encerra esta cena ao iniciar a próxima
   }
 }
