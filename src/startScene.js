@@ -18,6 +18,10 @@ class StartScene extends Phaser.Scene {
 
     // Adiciona um texto com o título do jogo
     this.add.text(gameState.larguraJogo / 3, 50, 'Dino Coin', { fontSize: '100px', fill: '#FFFFFF' });
+    
+    // Texto que fala os controles
+    this.add.text(10 , gameState.alturaJogo - 100 , 'SETAS DO TECLADO - Movimento lateral', { fontSize: '32px', fill: '#FFFFFF' });
+    this.add.text(10, gameState.alturaJogo - 50, 'ESPAÇO e SETA PARA CIMA - Salto', { fontSize: '32px', fill: '#FFFFFF' });
 
     // Adiciona o botão 'play' à cena e ajusta a escala
     var btnPlay = this.add.image(gameState.larguraJogo / 2, gameState.alturaJogo / 2, 'play');
